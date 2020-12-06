@@ -1,7 +1,16 @@
 <h1>Lets Begin</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="main-form__body">
+        <%= simple_form_for @post do |f| %>
+        <%= f.input :title, placeholder: 'The Greatest Story Ever', class:"main-form__input" %>
+        <%= f.input :body, placeholder: 'Once upon a time ...', class:"main-form__input" %>
+        <%= f.button :submit %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= simple_form_for @post do |f| %>
-  <%= f.input :title, placeholder: 'The Greatest Story Ever' %>
-  <%= f.input :body, placeholder: 'Once upon a time ...' %>
-  <%= f.button :submit %>
-<% end %>
+
