@@ -1,6 +1,6 @@
 <h1>Posts</h1>
-
-<h2>
+<div class="card-post-show">
+  <h2>
   <%= @post.title %>
 </h2>
 <p>
@@ -10,5 +10,8 @@
 <p>
   Submitted <%= time_ago_in_words(@post.created_at) %> ago
 </p>
+</div>
+
+
 
 
