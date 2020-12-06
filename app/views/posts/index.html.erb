@@ -1,0 +1,12 @@
+<h1>Welcome to the index page</h1>
+
+<% @posts.each do |post| %>
+  <div class="card-post">
+    <h2> <%= link_to post.title, post %></h2>
+    <p><%= time_ago_in_words(post.created_at) %> ago </p>
+    <br>
+  </div>
+<% end %>
+
+
+
