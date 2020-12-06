@@ -1,0 +1,7 @@
+<div class="main-form__body">
+  <%= simple_form_for [@post,@comment] do |f| %>
+    <%= f.input :name, class:"main-form__input" %>
+    <%= f.input :body, class:"main-form__input" %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
